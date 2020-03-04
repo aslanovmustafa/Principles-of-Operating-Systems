@@ -1,6 +1,6 @@
 Assignment	1
 
-<SUMMARY> 1 writer and infinite readers with priority given to writer. When writer comes mid readers, currently reading readers have to finish and newly wanting readers have to wait until writer finishes writing.</SUMMARY>
+*SUMMARY: 1 writer and infinite readers with priority given to writer. When writer comes mid readers, currently reading readers have to finish and newly wanting readers have to wait until writer finishes writing.*
 
 
 The	task	is	to	improve	the	default	implementation	of	the	readers/writer	problem.	Due	
