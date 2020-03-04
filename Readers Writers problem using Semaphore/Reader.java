@@ -1,3 +1,5 @@
+//added more log info + fixed thread sleep issue
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -18,7 +20,7 @@ public class Reader extends Thread {
       	  synchronize.rsem.acquire();
       	  synchronize.x.acquire();
       } catch(Exception e){}
-      randSleep.doSleep();	//for more reads at the same time comment this part.
+      	//for more reads at the same time comment this part.
     	  synchronize.readCount++;
     	  if (synchronize.readCount == 1) {
     		  try {
@@ -28,12 +30,14 @@ public class Reader extends Thread {
     	  synchronize.z.release();
     	  System.out.println("Reader " + Thread.currentThread().getName() + " is reading");
     	  read();
-
+    	  randSleep.doSleep();
           System.out.println("Writers Writing: " + synchronize.writeCount + " | Readers Reading: " + synchronize.readCount);
     	
           try{ synchronize.x.acquire();}
           	catch(Exception e){}
           synchronize.readCount--;
+    	  System.out.println("Reader " + Thread.currentThread().getName() + " is finished reading");
+
       
 
           if (synchronize.readCount == 0) synchronize.wsem.release();
