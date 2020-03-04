@@ -1,5 +1,8 @@
 Assignment	1
 
+<SUMMARY> 1 writer and infinite readers with priority given to writer. When writer comes mid readers, currently reading readers have to finish and newly wanting readers have to wait until writer finishes writing.</SUMMARY>
+
+
 The	task	is	to	improve	the	default	implementation	of	the	readers/writer	problem.	Due	
 to	larger	number	of	reader	threads,	writer	has	lower	chance	to	acquire	the	DB	lock.	
 Therefore,	you	must come	up	with	a	solution	such	that	whenever	writer	has	an	
