@@ -1,3 +1,5 @@
+//added more log info
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -42,6 +44,7 @@ public class Writer extends Thread {
 	      catch(Exception e){}
 	  
 	  synchronize.writeCount--;
+	  System.out.println("Writer " + Thread.currentThread().getName() + " is finished writing");
 
 	  if (synchronize.writeCount == 0) synchronize.rsem.release();
       synchronize.y.release();
