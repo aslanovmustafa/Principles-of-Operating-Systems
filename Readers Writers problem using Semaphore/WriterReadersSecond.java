@@ -1,3 +1,5 @@
+//this is simple version of the rest of the code.
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
