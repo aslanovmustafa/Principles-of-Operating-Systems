@@ -1,0 +1,14 @@
+Init 20 5 10 1
+Read 150
+Read 12500
+Read 12501
+Write 12999 10
+Read 12999
+Write 13000 55
+Write 1000 77
+Read 2000
+Read 3000
+Read 4000
+Read 12999
+Read 5000
+Exit

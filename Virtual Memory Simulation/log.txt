@@ -1,0 +1,53 @@
+Initialized
+
+Page fault at 150
+Loading page 0 to frame 0
+Value at address 150 is 0
+
+Page fault at 12500
+Loading page 12 to frame 1
+Value at address 12500 is 0
+
+Value at address 12501 is 0
+
+Written 10 to address 12999
+
+Value at address 12999 is 10
+
+Page fault at 13000
+Loading page 13 to frame 2
+Written 55 to address 13000
+
+Page fault at 1000
+Loading page 1 to frame 3
+Written 77 to address 1000
+
+Page fault at 2000
+Loading page 2 to frame 4
+Value at address 2000 is 0
+
+Page fault at 3000
+Evicting page 0 from frame 0
+Loading page 3 to frame 0
+Value at address 3000 is 0
+
+Page fault at 4000
+Evicting page 12 from frame 1
+Saving page 12 to swap_memory block 0
+Loading page 4 to frame 1
+Value at address 4000 is 0
+
+Page fault at 12999
+Evicting page 13 from frame 2
+Saving page 13 to swap_memory block 1
+Loading_page 12 from swap_memory block 0 to frame 2
+Value at address 12999 is 10
+
+Page fault at 5000
+Evicting page 1 from frame 3
+Saving page 1 to swap_memory block 0
+Loading page 5 to frame 3
+Value at address 5000 is 0
+
+Memory - 3, 4, 12, 5, 2.
+Swap - 1, 13, 0, 0, 0, 0, 0, 0, 0, 0.
